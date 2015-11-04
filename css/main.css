@@ -57,7 +57,7 @@ nav {
   pading: 1em;
 }
 
-.nav {
-  background-color: #4c0404;
-  text-align: center;
+.nav a:hover {
+  display: block;
+  background-color: #6c0404;
 }
