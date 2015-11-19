@@ -8,13 +8,20 @@
 <link href="css/type.css" rel="stylesheet">
 <link href="css/grid.css" rel="stylesheet">
 <link href="css/main.css" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Arimo:400,700|Amatic+SC:400,700' rel='stylesheet' type='text/css'>
 <meta name="handheldfriendly" content="true">
 <meta name="mobileoptimized" content="240">
 </head>
 
-<header id="header">
+<ul class="skip-links">
+  <li><a href="#main">Jump to main content</a></li>
+  <li><a href="#nav">Jump to navigation</a></li>
+
+</ul>
+
+<header id="header" role="banner">
   <div class="grid">
-    <nav class="unit">
+    <nav class="unit" role="navigation" id="nav">
       <input type="checkbox" class="nav-check" id="nav-check">
         <label class="nav-label nav-icon" for="nav-check">
           <img src="img/nav-icon.png" alt="Open Navigation">
@@ -30,16 +37,17 @@
     </nav>
   </div>
 </header>
+
+<main id="main" role="main">
 <body>
 
     <div class="grid xs-1 s-1 m-1 l-1 xl-1">
       <div class="unit xs-1 s-1 m-1 l-1 xl-1">
         <div class="banner">
-        <img  src="http://placehold.it/350x150">
           <div class="ban-con">
             <h1>SPEAKEASY</h1>
             <p>An online language learning program for beginners of all ages.</p>
-            <a href="signup.html">Sign Up Now!</a>
+            <a class="sign-up1" href="signup.html">Sign Up Now!</a>
           </div>
         </div>
       </div>
@@ -55,18 +63,16 @@
 <div class="grid">
     <div class="unit xs-1 s-1 m-1-2 l-1 xl-1">
       <div class="banner">
-      <img src="http://placehold.it/350x150">
-        <div class="ban-con">
-          <a href="tour.html"><h2>Tour</h2></a>
+        <div class="ban-con1">
+          <a class="peta" href="tour.html">Tour</a>
         </div>
       </div>
     </div>
 
     <div class="unit xs-1 s-1 m-1-2 l-1 xl-1">
       <div class="banner">
-      <img  src="http://placehold.it/350x150">
-        <div class="ban-con">
-          <a href="pricing.html"><h2>Pricing</h2></a>
+        <div class="ban-con1">
+          <a class="peta" href="pricing.html">Pricing</a>
         </div>
       </div>
     </div>
@@ -76,9 +82,8 @@
   <div class="grid xs-1 s-1 m-1 l-1 xl-1">
     <div class="unit xs-1 s-1 m-1 l-1 xl-1">
       <div class="banner">
-      <img  src="http://placehold.it/350x150">
-        <div class="ban-con">
-          <a href="signup.html"><h2>Sign up</h2></a>
+        <div class="ban-con1">
+          <a class="peta" href="signup.html">Sign up</a>
         </div>
       </div>
     </div>
@@ -86,23 +91,30 @@
 
 
 </body>
+</main>
 
 <footer>
-  <div class="grid ">
-    <div class="unit xs-3-4 s-3-4 m-3-4 l-3-4 xl-3-4">
-      <nav>
+  <div class="grid">
+    <div class="unit xs-3-4 s-3-4 m-3-4 l-3-4 xl-3-4 pad-t ">
+      <nav role="navigation">
         <ul class="nav-f">
-          <li><a href="index.html"></a></li>
           <li><a href="tour.html">Tour</a></li>
           <li><a href="pricing.html">Pricing</a></li>
           <li><a href="signup.html">Sign Up</a></li>
         </ul>
     </nav>
   </div>
-    <div class="unit xs-1-4 s-1-4 m-1-4 l-1-4 xl-1-4">
+    <div class="unit xs-1-4 s-1-4 m-1-4 l-1-4 xl-1-4 pad-t">
       <a href="#header">top</a>
     </div>
   </div>
 
+  <div class="grid">
+    <div class="unit xs-1 s-1 m-1 l-1 xl-1" role="contentinfo">
+      <p class="micro">© SPEAKEASY 2015</p>
+    </div>
+  </div>
+
 </footer>
+
 </html>

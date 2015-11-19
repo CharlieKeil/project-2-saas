@@ -1,4 +1,4 @@
-@-moz-viewport {width: device-width; scale: 1;}
+ @-moz-viewport {width: device-width; scale: 1;}
 @-ms-viewport {width: device-width; scale: 1;}
 @-o-viewport {width: device-width; scale: 1;}
 @-webkit-viewport {width: device-width; scale: 1;}
@@ -14,6 +14,22 @@ text-size-adjust: 100%;
 
 *, *::before, *::after {
 box-sizing: inherit;
+}
+
+
+
+/*
+font-family: 'Arimo', sans-serif;
+font-family: 'Amatic SC', cursive;
+*/
+
+html {
+  font-family: 'Arimo', sans-serif;
+}
+
+h1 {
+  font-family: 'Amatic SC', cursive,;
+
 }
 
 header {
@@ -35,6 +51,14 @@ nav {
 .nav a{
     text-decoration: none;
     color: #fff;
+    padding: .5em 1em;
+    background-color: #777;
+    border-radius: 10px;
+    margin: 1em;
+}
+
+.nav li {
+  padding: .5em;
 }
 
 .nav-check {
@@ -44,6 +68,7 @@ nav {
 
 .nav-check:checked ~ .nav{
   display: block;
+  padding-bottom: .5em;
 }
 
 .nav-label {
@@ -58,7 +83,6 @@ nav {
 }
 
 .nav a:hover {
-  display: block;
   background-color: #666;
 }
 
@@ -69,6 +93,10 @@ nav {
   max-height: 75vh;
   overflow: hidden;
   clear: both;
+  background:
+  linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent) no-repeat center bottom / 100% 50%,
+  url("http://placehold.it/350x150") no-repeat center top / cover;
+  padding-top: 42.85%;
 }
 
 .banner img {
@@ -87,11 +115,33 @@ nav {
 .ban-con a {
   color: #fff;
   text-decoration: none;
+  background-color: #666;
+  padding: 1em 2em;
+  border-radius: 10px;
+}
+
+.ban-con1 {
+  position: absolute;
+  bottom: 1em;
+  width: 100%;
+  text-shadow: 1px 1px 8px rgba (0,0,0,0.8);
+  bottom: 15%;
+  font-size: 1em;
+}
+
+.ban-con1 a {
+  color: #fff;
+  text-decoration: none;
+  background-color: #666;
+  padding: .25em .5em;
+  border-radius: 10px;
 }
 
 footer {
   background-color: #888;
 }
+
+
 
 .nav-f {
   background-color: #888;
@@ -101,8 +151,16 @@ footer {
   display: inline;
 }
 
-
-
 .nav-f a{
-  background-color:
+  text-decoration: none;
+  background-color: #777;
+  padding: .5em 1em;
+  text-align: center;
+  color: #fff;
+  max-width: 18%;
+  border-radius: 10px;
+}
+
+.nav-f a:hover {
+  background-color: #555;
 }

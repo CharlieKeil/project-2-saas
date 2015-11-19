@@ -30,54 +30,62 @@
 </header>
 <body>
 
+  <div class="grid gutter">
+    <h2 class="unit xs-1 s-1 m-1 l-1 xl-1">Sign Up!</h2>
 
-  <h2>Sign Up!</h2>
+    <div class="grid xs-1 s-1 m-1 l-1 xl-1">
+      <form class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2">
+        <input type="text" required placeholder="Bob">
+        <label for="name">First Name</label>
+      </form>
 
-  <form>
-    <input type="text" required placeholder="Bob">
-    <label for="name">First Name</label>
-  </form>
+      <form class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2">
+        <input type="text" required placeholder="Jefferson">
+        <label for="last name">Last Name</label>
+      </form>
+    </div>
 
-  <form>
-    <input type="text" required placeholder="Jefferson">
-    <label for="last name">Last Name</label>
-  </form>
+    <div class="grid xs-1 s-1 m-1 l-1 xl-1">
+      <form class="unit xs-1 s-1 m-1-2 l-1 xl-1 ">
+        <input type="email" placeholder="Bob-Jeff@blah.com" id="email">
+        <label for="email">Email</label>
+      </form>
+    </div>
 
-  <form>
-    <input type="email" placeholder="Bob-Jeff@blah.com" id="email">
-      <label for="email">Email</label>
-  </form>
+    <div class="grid xs-1 s-1 m-1 l-1 xl-1">
+      <form class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2">
+        <input type="password" required>
+        <label for="last name">Password</label>
+      </form>
 
-  <form>
-  <input type="password" required>
-  <label for="last name">Password</label>
-  </form>
+      <form class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2">
+        <input type="password" required>
+        <label for="last name">Confirm Password</label>
+      </form>
+    </div>
 
-  <form>
-    <input type="password" required>
-    <label for="last name">Confirm Password</label>
-  </form>
+    <div class="grid xs-1 s-1 m-1 l-1 xl-1">
+      <form class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2">
+        <select id="Select Plan">
+          <option>Free trial - 2 Months</option>
+          <option>Base $9.99 - Monthly</option>
+          <option>Advanced $14.99 - Monthly</option>
+          <option>Fluent $149.99 - Annually</option>
+        </select>
+        <label for="Select Plan">Select Plan</label>
+      </form>
 
-  <form>
-    <select id="Select Plan">
-      <option>Free trial - 2 Months</option>
-      <option>Base $9.99 - Monthly</option>
-      <option>Advanced $14.99 - Monthly</option>
-      <option>Fluent $149.99 - Annually</option>
-    </select>
-    <label for="Select Plan">Select Plan</label>
-  </form>
-
-  <form>
-    <select id="payment">
-      <option>Visa</option>
-      <option>Mastercard</option>
-      <option>Paypal</option>
-      <option>FundFriend</option>
-    </select>
-    <label for="payment">Payment Method</label>
-  </form>
-
+      <form class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2">
+        <select id="payment">
+          <option>Visa</option>
+          <option>Mastercard</option>
+          <option>Paypal</option>
+          <option>FundFriend</option>
+        </select>
+        <label for="payment">Payment Method</label>
+      </form>
+    </div>
+</div>
 
   <a href="#">Check Out!</a>
 
@@ -87,7 +95,27 @@
 </body>
 
 <footer>
-  <a href="signup.html">Sign Up</a>
+  <div class="grid ">
+    <div class="unit xs-3-4 s-3-4 m-3-4 l-3-4 xl-3-4 pad-t ">
+      <nav class="left" role="navigation">
+        <ul class="nav-f">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="tour.html">Tour</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+        </ul>
+    </nav>
+  </div>
+    <div class="unit xs-1-4 s-1-4 m-1-4 l-1-4 xl-1-4 pad-t">
+      <a href="#header">top</a>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="unit xs-1 s-1 m-1 l-1 xl-1" role="contentinfo">
+      <p class="micro">© SPEAKEASY 2015</p>
+    </div>
+  </div>
+
 </footer>
 
 </html>
