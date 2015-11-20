@@ -16,8 +16,6 @@ text-size-adjust: 100%;
 box-sizing: inherit;
 }
 
-
-
 /*
 font-family: 'Arimo', sans-serif;
 font-family: 'Amatic SC', cursive;
@@ -33,57 +31,67 @@ h1 {
 }
 
 header {
-  background-color: #888;
+  background-color: #fff;
+  padding: 1em;
+}
+
+
+main {
+    background: linear-gradient(to top, rgba(0, 0, 0, .5), transparent) no-repeat center top / 100% 1%;
+
 }
 
 nav {
   text-align: center;
+  position: relative;
+
 }
 .nav {
   margin: 0;
   padding: 0;
-  display: none;
   text-align: center;
   list-style-type: none;
-  background-color: #888;
+  background-color: #fff;
+  float: left;
 }
 
 .nav a{
-    text-decoration: none;
-    color: #fff;
-    padding: .5em 1em;
-    background-color: #777;
-    border-radius: 10px;
-    margin: 1em;
+    color: #000;
+    padding: .5em .5em;
+    background-color: #fff;
+    font-weight: 300;
 }
 
 .nav li {
   padding: .5em;
 }
 
-.nav-check {
-  position: absolute;
-  top: -3em;
-}
-
-.nav-check:checked ~ .nav{
-  display: block;
-  padding-bottom: .5em;
-}
-
-.nav-label {
-  cursor: pointer;
-  font-size: 1.25rem;
-  padding: .5em 0 0 .5em;
-}
-
-.nav-icon img{
-  max-width: 75%;
-  pading: 1em;
-}
-
 .nav a:hover {
-  background-color: #666;
+  color: #6C0404;
+}
+
+@media only screen and (min-width: 38em) {
+
+  .nav li{
+    display: inline;
+  }
+
+  .nav {
+    float: right;
+
+  }
+}
+
+.spike{
+  background: url("../img/spikes1.png") ,url("../img/spikes2.png");
+  background-size: 80px auto, 80px auto;
+	background-position: left center, right center;
+	/* One value will apply to all images */
+	background-repeat: no-repeat;
+}
+
+.spike p {
+  padding: 1em
 }
 
 .banner {
@@ -95,8 +103,15 @@ nav {
   clear: both;
   background:
   linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent) no-repeat center bottom / 100% 50%,
-  url("http://placehold.it/350x150") no-repeat center top / cover;
+  url("../img/herobanner.jpg") no-repeat center top / cover;
   padding-top: 42.85%;
+}
+
+.banner:hover {
+  background:
+  linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent) no-repeat center bottom / 100% 50%,
+  url(../img/herobanner2.jpg) no-repeat center top / cover;
+
 }
 
 .banner img {
@@ -109,16 +124,30 @@ nav {
   width: 100%;
   text-shadow: 1px 1px 8px rgba (0,0,0,0.8);
   bottom: 15%;
-  font-size: 1em;
+  font-weight: 300;
+  color: #fff;
 }
 
 .ban-con a {
   color: #fff;
-  text-decoration: none;
-  background-color: #666;
+  background-color: transparent;
   padding: 1em 2em;
   border-radius: 10px;
+  font-weight: 300;
+
+  border: #fff;
+  border-style: solid;
+  border-width: 1px;
 }
+
+.ban-con a:hover {
+  color: #000;
+  background-color: #fff;
+
+  padding: 1em 2em;
+}
+
+
 
 .ban-con1 {
   position: absolute;
@@ -138,13 +167,15 @@ nav {
 }
 
 footer {
-  background-color: #888;
+  background-color: #111;
+  color: #999;
+  font-weight: 300;
 }
 
 
 
 .nav-f {
-  background-color: #888;
+  background-color: #111;
 }
 
 .nav-f li{
@@ -152,15 +183,13 @@ footer {
 }
 
 .nav-f a{
-  text-decoration: none;
-  background-color: #777;
-  padding: .5em 1em;
+  background-color: #111;
+  padding: .5em;
   text-align: center;
-  color: #fff;
-  max-width: 18%;
-  border-radius: 10px;
+  color: #999;
+  font-weight: 300;
 }
 
 .nav-f a:hover {
-  background-color: #555;
+  color: #fff;
 }
