@@ -25,20 +25,14 @@ html {
   font-family: 'Arimo', sans-serif;
 }
 
-h1 {
-  font-family: 'Amatic SC', cursive,;
 
+.amatic {
+  font-family: 'Amatic SC', cursive,;
 }
 
 header {
   background-color: #fff;
   padding: 1em;
-}
-
-
-main {
-    background: linear-gradient(to top, rgba(0, 0, 0, .5), transparent) no-repeat center top / 100% 1%;
-
 }
 
 nav {
@@ -86,7 +80,6 @@ nav {
   background: url("../img/spikes1.png") ,url("../img/spikes2.png");
   background-size: 80px auto, 80px auto;
 	background-position: left center, right center;
-	/* One value will apply to all images */
 	background-repeat: no-repeat;
 }
 
@@ -94,6 +87,8 @@ nav {
   padding: 1em
 }
 
+
+/*BANNERS*/
 .banner {
   position: relative;
   text-align: center;
@@ -107,17 +102,56 @@ nav {
   padding-top: 42.85%;
 }
 
+.banner1 {
+  position: relative;
+  text-align: center;
+  font-size: .75rem;
+  max-height: 75vh;
+  overflow: hidden;
+  clear: both;
+  background:
+  linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent) no-repeat center bottom / 100% 50%,
+  url("../img/idea2.jpg") no-repeat center top / cover;
+  padding-top: 60%;
+}
+
+.banner2 {
+  position: relative;
+  text-align: center;
+  font-size: .75rem;
+  max-height: 75vh;
+  overflow: hidden;
+  clear: both;
+  background:
+  linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent) no-repeat center bottom / 100% 50%,
+  url("../img/books.jpg") no-repeat center top / cover;
+  padding-top: 60%;
+}
+
+.banner3 {
+  position: relative;
+  text-align: center;
+  font-size: .75rem;
+  max-height: 75vh;
+  overflow: hidden;
+  clear: both;
+  background:
+  linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent) no-repeat center bottom / 100% 50%,
+  url("../img/sign.jpg") no-repeat center top / cover;
+  padding-top: 42.85%;
+}
+
 .banner:hover {
   background:
   linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent) no-repeat center bottom / 100% 50%,
   url(../img/herobanner2.jpg) no-repeat center top / cover;
-
 }
 
 .banner img {
   width: 100%;
 }
 
+/*BANNER CONTENT*/
 .ban-con {
   position: absolute;
   bottom: 1em;
@@ -143,10 +177,8 @@ nav {
 .ban-con a:hover {
   color: #000;
   background-color: #fff;
-
   padding: 1em 2em;
 }
-
 
 
 .ban-con1 {
@@ -160,19 +192,31 @@ nav {
 
 .ban-con1 a {
   color: #fff;
-  text-decoration: none;
-  background-color: #666;
-  padding: .25em .5em;
+  background-color: transparent;
+  padding: .25em .75em;
   border-radius: 10px;
+  font-weight: 300;
+  border: #fff;
+  border-style: solid;
+  border-width: 1px;
 }
 
+.ban-con1 p {
+  color: #fff;
+}
+
+.ban-con1 a:hover {
+  color: #000;
+  background-color: #fff;
+  padding: .25em .75em;
+}
+
+/*FOOTER*/
 footer {
   background-color: #111;
   color: #999;
   font-weight: 300;
 }
-
-
 
 .nav-f {
   background-color: #111;
