@@ -26,10 +26,8 @@ html {
 }
 
 
-.amatic {
-  font-family: 'Amatic SC', cursive,;
-}
 
+/*NAVIGATION*/
 header {
   background-color: #fff;
   padding: 1em;
@@ -76,6 +74,11 @@ nav {
   }
 }
 
+/*BODY*/
+.amatic {
+  font-family: 'Amatic SC', cursive,;
+}
+
 .spike{
   background: url("../img/spikes1.png") ,url("../img/spikes2.png");
   background-size: 80px auto, 80px auto;
@@ -86,7 +89,6 @@ nav {
 .spike p {
   padding: 1em
 }
-
 
 /*BANNERS*/
 .banner {
