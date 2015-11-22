@@ -232,18 +232,49 @@ footer {
   background-color: #111;
 }
 
-.nav-f li{
-  display: inline;
+@media only screen and (min-width: 38em) {
+
+  .nav-f li{
+    display: inline;
+  }
+
+  .nav-f a {
+    padding: 1em;
+  }
+}
+
+.nav-f li {
+  list-style-type: none;
+  padding: .5em;
 }
 
 .nav-f a{
   background-color: #111;
-  padding: .5em;
+  padding: .5em 1em .5em 1em;
   text-align: center;
   color: #999;
   font-weight: 300;
+
 }
 
 .nav-f a:hover {
   color: #fff;
+}
+
+.logo2 {
+  background: url("../img/saas-logo3.png");
+  background-size: 40px auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: inline;
+  margin-right: .5em;
+}
+
+.logo2:hover {
+  background: url("../img/saas-logo2.png");
+  background-size: 40px auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: inline;
+  margin-right: .5em;
 }
