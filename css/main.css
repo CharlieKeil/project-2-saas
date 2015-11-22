@@ -120,7 +120,7 @@ nav {
   overflow: hidden;
   clear: both;
   background:
-  linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent) no-repeat center bottom / 100% 50%,
+  linear-gradient(to bottom, rgba(0, 0, 0, 0.7), transparent) no-repeat center top / 100% 50%,
   url("../img/idea2.jpg") no-repeat center top / cover;
   padding-top: 60%;
 }
@@ -133,7 +133,7 @@ nav {
   overflow: hidden;
   clear: both;
   background:
-  linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent) no-repeat center bottom / 100% 50%,
+  linear-gradient(to bottom, rgba(0, 0, 0, 0.7), transparent) no-repeat center top / 100% 50%,
   url("../img/books.jpg") no-repeat center top / cover;
   padding-top: 60%;
 }
@@ -146,9 +146,22 @@ nav {
   overflow: hidden;
   clear: both;
   background:
-  linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent) no-repeat center bottom / 100% 50%,
+  linear-gradient(to bottom, rgba(0, 0, 0, 0.7), transparent) no-repeat center top / 100% 50%,
   url("../img/sign.jpg") no-repeat center top / cover;
   padding-top: 42.85%;
+}
+
+.banner3-2 {
+  position: relative;
+  text-align: center;
+  font-size: .75rem;
+  max-height: 75vh;
+  overflow: hidden;
+  clear: both;
+  background:
+  linear-gradient(to bottom, rgba(0, 0, 0, 0.7), transparent) no-repeat center top / 100% 50%,
+  url("../img/sign.jpg") no-repeat center top / cover;
+  padding-top: 60%;
 }
 
 .banner:hover {
