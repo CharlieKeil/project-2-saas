@@ -30,14 +30,14 @@ html {
 /*NAVIGATION*/
 header {
   background-color: #fff;
-  padding: 1em;
+  padding: 2em;
 }
 
 nav {
   text-align: center;
   position: relative;
   left: 25% ;
-
+  top: 30px;
 }
 .nav {
   margin: 0;
@@ -65,9 +65,14 @@ nav {
 
 @media only screen and (min-width: 38em) {
 
+  header {
+    background-color: #fff;
+    padding: 1em;
+  }
+
   nav {
     left: 0% ;
-
+    top: 0px;
   }
 
   .nav li{
