@@ -219,7 +219,26 @@ nav {
   padding-top: 60%;
 }
 
-.banner:hover {
+.banner4 {
+  position: relative;
+  text-align: center;
+  font-size: .75rem;
+  max-height: 75vh;
+  overflow: hidden;
+  clear: both;
+  background:
+  linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent) no-repeat center bottom / 100% 50%,
+  url("../img/herobanner.jpg") no-repeat center top / cover;
+  padding-top: 15%;
+}
+
+.banner:hover  {
+  background:
+  linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent) no-repeat center bottom / 100% 50%,
+  url(../img/herobanner2.jpg) no-repeat center top / cover;
+}
+
+.banner4:hover {
   background:
   linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent) no-repeat center bottom / 100% 50%,
   url(../img/herobanner2.jpg) no-repeat center top / cover;
